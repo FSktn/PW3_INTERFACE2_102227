@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hej Lego World - Digitale Kiosk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="poster-bg"></div>
+
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero__left">
+        <p class="hero__eyebrow">Hej Lego World</p>
+        <h1>Kiosk</h1>
+        <p class="hero__text">
+          Ontdek bouwsets. Zoek op naam of setnummer en bekijk direct het overzicht.
+        </p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="panel panel--yellow">
+          <div class="panel__studs">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <h2>Zoeken</h2>
+          <label class="label" for="searchInput">Zoek op naam of setnummer</label>
+          <input id="searchInput" class="search-input" type="text" placeholder="Bijv. castle, ghost, 10332..." />
+          <p class="helper-text">
+            Typ in het veld en filter direct door de beschikbare sets.
+          </p>
+        </section>
+      </aside>
+
+      <section class="content">
+        <div class="content__frame">
+          <div class="content__topbar">
+            <div>
+              <p class="section-label">Set overzicht</p>
+              <h2>Beschikbare LEGO-sets</h2>
+            </div>
+            <p id="resultCount" class="result-count">0 resultaten</p>
+          </div>
+
+          <div id="results" class="results-grid"></div>
+        </div>
+
+        <template id="cardTemplate">
+          <article class="set-card">
+            <div class="set-card__studs">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="set-card__image-wrap">
+              <img class="set-card__image" src="" alt="" />
+            </div>
+
+            <div class="set-card__body">
+              <p class="set-card__number"></p>
+              <h3 class="set-card__title"></h3>
+              <p class="set-card__meta"></p>
+              <button class="set-card__button" type="button">Bekijk set</button>
+            </div>
+          </article>
+        </template>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
