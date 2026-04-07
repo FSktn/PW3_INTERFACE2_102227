@@ -1,17 +1,21 @@
 import { useState } from 'react';
 import './App.css';
-import { sets } from './data';
+import { legoSets } from './data';
 import SearchBar from './components/SearchBar';
 import ResultsList from './components/ResultsList';
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('');
+  // State voor de zoekterm die de gebruiker invult
+  const [zoekopdracht, setZoekopdracht] = useState('');
 
-  const filteredSets = sets.filter((set) => {
-    const q = searchTerm.trim().toLowerCase();
+  // Hier filteren we de lijst op basis van wat de gebruiker typt
+  const gefilterdeSets = legoSets.filter((item) => {
+    const zoekje = zoekopdracht.toLowerCase().trim();
+    if (zoekje === '') return true; // Toon alles als er niks getypt is
+    
     return (
-      set.name.toLowerCase().includes(q) ||
-      set.setNumber.toLowerCase().includes(q)
+      item.naam.toLowerCase().includes(zoekje) ||
+      item.setNummer.toLowerCase().includes(zoekje)
     );
   });
 
@@ -33,8 +37,11 @@ function App() {
       </header>
 
       <main className="layout">
-        <SearchBar searchTerm={searchTerm} onSearchChange={setSearchTerm} />
-        <ResultsList sets={filteredSets} />
+        {/* De zoekbalk krijgt de state en de functie mee via props */}
+        <SearchBar waarde={zoekopdracht} onVerander={setZoekopdracht} />
+        
+        {/* De lijst krijgt alleen de gefilterde data mee */}
+        <ResultsList data={gefilterdeSets} />
       </main>
     </div>
   );

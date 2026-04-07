@@ -1,58 +1,58 @@
-export const sets = [
+export const legoSets = [
   {
-    setNumber: "10273",
-    name: "Haunted House",
-    pieces: 3231,
-    year: 2020,
-    image: "/images/haunted-house.jpg"
+    setNummer: "10273",
+    naam: "Haunted House",
+    onderdelen: 3231,
+    jaar: 2020,
+    foto: "/images/haunted-house.jpg"
   },
   {
-    setNumber: "910001",
-    name: "Castle in the Forest",
-    pieces: 2103,
-    year: 2021,
-    image: "/images/castle-forest.jpg"
+    setNummer: "910001",
+    naam: "Castle in the Forest",
+    onderdelen: 2103,
+    jaar: 2021,
+    foto: "/images/castle-forest.jpg"
   },
   {
-    setNumber: "21325",
-    name: "Medieval Blacksmith",
-    pieces: 2164,
-    year: 2021,
-    image: "/images/blacksmith.jpg"
+    setNummer: "21325",
+    naam: "Medieval Blacksmith",
+    onderdelen: 2164,
+    jaar: 2021,
+    foto: "/images/blacksmith.jpg"
   },
   {
-    setNumber: "10332",
-    name: "Medieval Town Square",
-    pieces: 3304,
-    year: 2024,
-    image: "/images/town-square.jpg"
+    setNummer: "10332",
+    naam: "Medieval Town Square",
+    onderdelen: 3304,
+    jaar: 2024,
+    foto: "/images/town-square.jpg"
   },
   {
-    setNumber: "76408",
-    name: "12 Grimmauld Place",
-    pieces: 1083,
-    year: 2022,
-    image: "/images/grimmauld.jpg"
+    setNummer: "76408",
+    naam: "12 Grimmauld Place",
+    onderdelen: 1083,
+    jaar: 2022,
+    foto: "/images/grimmauld.jpg"
   },
   {
-    setNumber: "76407",
-    name: "The Shrieking Shack",
-    pieces: 777,
-    year: 2022,
-    image: "/images/shrieking-shack.jpg"
+    setNummer: "76407",
+    naam: "The Shrieking Shack",
+    onderdelen: 777,
+    jaar: 2022,
+    foto: "/images/shrieking-shack.jpg"
   },
   {
-    setNumber: "21341",
-    name: "Sanderson Sisters' Cottage",
-    pieces: 2316,
-    year: 2023,
-    image: "/images/sanderson.jpg"
+    setNummer: "21341",
+    naam: "Sanderson Sisters' Cottage",
+    onderdelen: 2316,
+    jaar: 2023,
+    foto: "/images/sanderson.jpg"
   },
   {
-    setNumber: "75904",
-    name: "Mystery Mansion",
-    pieces: 860,
-    year: 2015,
-    image: "/images/mystery-mansion.jpg"
+    setNummer: "75904",
+    naam: "Mystery Mansion",
+    onderdelen: 860,
+    jaar: 2015,
+    foto: "/images/mystery-mansion.jpg"
   }
 ];
