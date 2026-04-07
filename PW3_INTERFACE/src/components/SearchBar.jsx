@@ -1,6 +1,6 @@
 import React from 'react';
 
-// De zoekbalk component
+// de zoekbalk component
 const SearchBar = (props) => {
   return (
     <aside className="sidebar">

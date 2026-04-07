@@ -1,4 +1,4 @@
-/* Basis instellingen */
+/* basis instellingen */
 * {
   box-sizing: border-box;
 }
@@ -26,7 +26,7 @@ body {
   margin: 0 auto;
 }
 
-/* De bovenkant (Hero) */
+/* de hero bovenkant */
 .hero--steampunk {
   background: linear-gradient(135deg, #3d2b1f, #1a0f0a);
   border: 5px double var(--koper);
@@ -66,7 +66,7 @@ body {
   font-size: 14px;
 }
 
-/* Grid layout voor sidebar en content */
+/* layout sidebar en content */
 .layout {
   display: flex;
   gap: 20px;
@@ -101,7 +101,7 @@ body {
   border: 2px solid var(--ijzer);
 }
 
-/* De lijst met sets */
+/* de lijst met sets */
 .content {
   flex: 1;
 }

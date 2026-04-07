@@ -5,13 +5,13 @@ import SearchBar from './components/SearchBar';
 import ResultsList from './components/ResultsList';
 
 function App() {
-  // State voor de zoekterm die de gebruiker invult
+  // de zoekterm van de gebruiker
   const [zoekopdracht, setZoekopdracht] = useState('');
 
-  // Hier filteren we de lijst op basis van wat de gebruiker typt
+  // lijst filteren op wat de gebruiker typt
   const gefilterdeSets = legoSets.filter((item) => {
     const zoekje = zoekopdracht.toLowerCase().trim();
-    if (zoekje === '') return true; // Toon alles als er niks getypt is
+    if (zoekje === '') return true; // alles tonen bij leeg veld
     
     return (
       item.naam.toLowerCase().includes(zoekje) ||
@@ -37,10 +37,10 @@ function App() {
       </header>
 
       <main className="layout">
-        {/* De zoekbalk krijgt de state en de functie mee via props */}
+        {/* zoekbalk krijgt state en functie via props */}
         <SearchBar waarde={zoekopdracht} onVerander={setZoekopdracht} />
         
-        {/* De lijst krijgt alleen de gefilterde data mee */}
+        {/* de lijst krijgt de gefilterde data */}
         <ResultsList data={gefilterdeSets} />
       </main>
     </div>

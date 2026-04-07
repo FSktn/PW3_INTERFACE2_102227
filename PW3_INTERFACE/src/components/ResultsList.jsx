@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Kleine kaart voor één LEGO set
+// kleine kaart voor de set
 const ResultItem = (props) => {
   const set = props.item;
   
@@ -24,9 +24,9 @@ const ResultItem = (props) => {
   );
 };
 
-// De totale lijst met resultaten
+// de lijst met resultaten
 const ResultsList = (props) => {
-  // Als er geen resultaten zijn laten we een melding zien
+  // melding als er niks is
   if (props.data.length === 0) {
     return (
       <section className="content">
